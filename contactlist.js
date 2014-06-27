@@ -47,6 +47,7 @@ function searchName(){
 
 searchName();
 /*6/26/2014 added a throw statement to indicate no match found.*/
+/*6/27/2014 never mind the throw; removed*/
 /*the for loop prints no match found b/c if the first entry it checks doesn't match, it prints out not match found.
 how to keep that from happening?*/
 
