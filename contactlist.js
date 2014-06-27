@@ -30,21 +30,20 @@ function searchName(){
     var addr = "";
     
         var search = prompt("Enter a name to search");
-        for(var each in friends){
-            if(friends[each].firstName === search){
-                console.log(friends[each].firstName);
-                console.log(friends[each].lastName);
-                console.log(friends[each].number);
-               /* prints each address item on its own line*/
-                for(var i = 0;i<friends[each].address.length;i++){
-                    addr += friends[each].address[i] + '\n';
+        
+            for(var each in friends){
+                if(friends[each].firstName === search){
+                    console.log(friends[each].firstName);
+                    console.log(friends[each].lastName);
+                    console.log(friends[each].number);
+                  
+                    for(var i = 0;i<friends[each].address.length;i++){
+                        addr += friends[each].address[i] + '\n';
+                    }
+                    console.log(addr);
                 }
-                console.log(addr);
-            }else{
-                throw "No match found.";
             }
-        }
-}
+} /*end function*/
 
 searchName();
 /*6/26/2014 added a throw statement to indicate no match found.*/
