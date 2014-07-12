@@ -46,4 +46,9 @@ function searchName(){
             }
 } /*end function*/
 
+
 searchName();
+/*6/26/2014 added a throw statement to indicate no match found.*/
+/*6/27/2014 never mind the throw; removed*/
+/*7/12/2014 FINALLY IT WORKS! With a match variable to keep count and use as a condition*/
+
