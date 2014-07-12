@@ -28,11 +28,12 @@ friends.steve = {
 
 function searchName(){
     var addr = "";
-    
+    var match = 0;
         var search = prompt("Enter a name to search");
         
             for(var each in friends){
                 if(friends[each].firstName === search){
+                    
                     console.log(friends[each].firstName);
                     console.log(friends[each].lastName);
                     console.log(friends[each].number);
@@ -41,6 +42,8 @@ function searchName(){
                         addr += friends[each].address[i] + '\n';
                     }
                     console.log(addr);
+                    match++;
+                    return match +" match found.";
                 }
             }
 } /*end function*/
@@ -63,3 +66,12 @@ var search = prompt("Enter a name to search");
             	console.log("no match");
             }
     }*/
+
+Ask for a name to search for
+
+check name against each object in the contact list
+    if a match is found
+        print the contact info
+    if nothing is found at the end of the contact List
+        print no match was found
+        
