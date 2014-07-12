@@ -67,11 +67,3 @@ var search = prompt("Enter a name to search");
             }
     }*/
 
-Ask for a name to search for
-
-check name against each object in the contact list
-    if a match is found
-        print the contact info
-    if nothing is found at the end of the contact List
-        print no match was found
-        
