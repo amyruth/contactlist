@@ -46,24 +46,12 @@ function searchName(){
                     return match +" match found.";
                 }
             }
+            if(match == 0){
+                return "No match found.";
+            }
 } /*end function*/
 
 searchName();
 /*6/26/2014 added a throw statement to indicate no match found.*/
 /*6/27/2014 never mind the throw; removed*/
-/*the for loop prints no match found b/c if the first entry it checks doesn't match, it prints out not match found.
-how to keep that from happening?*/
-
-/*This code prints out no match correctly but gives no match when a result is found
-
-var search = prompt("Enter a name to search");
-    for(var each in friends){
-        if(friends[each].firstName === search){
-            console.log(friends[each].firstName);
-            console.log(friends[each].lastName);
-            console.log(friends[each].number);
-         }else{
-            	console.log("no match");
-            }
-    }*/
-
+/*7/12/2014 FINALLY IT WORKS! With a match variable to keep count and use as a condition*/
