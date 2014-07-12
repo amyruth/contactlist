@@ -1,4 +1,4 @@
-/*Contact List w/Search Prompt*/
+Contact List w/Search Prompt*/
 
 var friends = {};
 friends.jeff = {
@@ -28,7 +28,7 @@ friends.steve = {
 
 function searchName(){
     var addr = "";
-    var match = 0;
+    var match = 0; 
         var search = prompt("Enter a name to search");
         
             for(var each in friends){
@@ -45,7 +45,7 @@ function searchName(){
                     match++;
                     return match +" match found.";
                 }
-            }
+            } /*if you go through the whole list and match is still 0, throw "No match found" message*/
             if(match == 0){
                 return "No match found.";
             }
@@ -54,4 +54,4 @@ function searchName(){
 searchName();
 /*6/26/2014 added a throw statement to indicate no match found.*/
 /*6/27/2014 never mind the throw; removed*/
-/*7/12/2014 FINALLY IT WORKS! With a match variable to keep count and use as a condition*/
+/*7/12/2014 FINALLY IT WORKS! With a match variable to keep count and use as a condition
