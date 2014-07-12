@@ -1,4 +1,4 @@
-Contact List w/Search Prompt*/
+/*Contact List w/Search Prompt*/
 
 var friends = {};
 friends.jeff = {
